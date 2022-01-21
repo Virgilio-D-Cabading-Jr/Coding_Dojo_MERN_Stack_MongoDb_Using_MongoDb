@@ -43,3 +43,7 @@ db.students.find({ lucky_number: {$gt: 3 } })
 ```
 db.students.find({ lucky_number: { $lte: 10 } })
 ```
+8. Get all students whose lucky number is between 1 and 9
+```
+db.students.find({ lucky_number: { $gte:1 , $lte:9 }})
+```
