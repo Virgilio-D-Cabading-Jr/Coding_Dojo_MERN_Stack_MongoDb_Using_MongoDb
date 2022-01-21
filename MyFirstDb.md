@@ -35,7 +35,11 @@ db.students.find()
 ```
 db.students.find({home_state:"California"})
 ```
-6. Get all students whose luck number is greater than 3
+6. Get all students whose lucky number is greater than 3
 ```
 db.students.find({ lucky_number: {$gt: 3 } })
+```
+7. Get all student whose lucky number is less than or equal to 10
+```
+db.students.find({ lucky_number: { $lte: 10 } })
 ```
