@@ -31,3 +31,7 @@ db.students.insertOne({name: "Leo", home_state: "California", lucky_number: 2, b
 ```
 db.students.find()
 ```
+5. Get all students who re from California
+```
+db.students.find({home_state:"California"})
+```
