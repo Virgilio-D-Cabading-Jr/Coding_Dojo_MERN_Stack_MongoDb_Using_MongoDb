@@ -5,3 +5,5 @@ Program Origin: Coding Dojo > MERN Stack > Mongo Db
 Language: Javascript
 
 Database: MongoDb
+
+Platform: Mongosh
