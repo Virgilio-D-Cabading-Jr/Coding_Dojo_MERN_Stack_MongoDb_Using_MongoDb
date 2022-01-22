@@ -71,3 +71,7 @@ db.students.updateOne({name: "Krystal"}, {$pop: {interests: 1}})
 ```
 db.students.deleteMany({home_state: "California"})
 ```
+14. Remove a student by Name
+```
+db.students.deleteOne({name: "Val"})
+```
