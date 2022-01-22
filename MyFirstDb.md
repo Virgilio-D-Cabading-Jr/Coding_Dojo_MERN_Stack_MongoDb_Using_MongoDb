@@ -51,3 +51,11 @@ db.students.find({ lucky_number: { $gte:1 , $lte:9 }})
 ```
 db.students.updateMany({}, {$set: {interests: ["coding","brunch","MongoDB"]}})
 ```
+10. Add some unique interests for each particular student into each of their interest arrays
+```
+db.students.updateOne({name: "Val"}, {$push: {interests: "football"}})
+db.students.updateOne({name: "Chris"}, {$addToSet: {interests: "tech"}})
+db.students.updateOne({name: "Adam"}, {$addToSet: {interests: "black belt"}})
+db.students.updateOne({name: "Krystal"}, {$addToSet: {interests: "money"}})
+db.students.updateOne({name: "Leo"}, {$addToSet: {interests: "new car"}})
+```
