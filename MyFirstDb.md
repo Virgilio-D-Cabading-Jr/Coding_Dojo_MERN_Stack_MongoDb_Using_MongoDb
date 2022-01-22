@@ -75,3 +75,7 @@ db.students.deleteMany({home_state: "California"})
 ```
 db.students.deleteOne({name: "Val"})
 ```
+15. Remove a student whose lucky number is greater than 5
+```
+db.students.deleteOne({lucky_number: {$gt: 5}})
+```
