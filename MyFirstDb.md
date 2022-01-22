@@ -47,3 +47,7 @@ db.students.find({ lucky_number: { $lte: 10 } })
 ```
 db.students.find({ lucky_number: { $gte:1 , $lte:9 }})
 ```
+9. Add a field to each student collection called 'interests' that is an ARRAY.  it should contain the following entries: 'coding', 'brunch', 'MongoDB'.  Do this in one operation
+```
+db.students.updateMany({}, {$set: {interests: ["coding","brunch","MongoDB"]}})
+```
