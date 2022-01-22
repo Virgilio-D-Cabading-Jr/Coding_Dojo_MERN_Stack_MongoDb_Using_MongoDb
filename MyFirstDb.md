@@ -67,3 +67,7 @@ db.students.updateOne({name: "Krystal"}, {$addToSet: {interests: "taxes"}})
 ```
 db.students.updateOne({name: "Krystal"}, {$pop: {interests: 1}})
 ```
+13. Remove all students who are from California
+```
+db.students.deleteMany({home_state: "California"})
+```
