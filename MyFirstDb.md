@@ -59,3 +59,11 @@ db.students.updateOne({name: "Adam"}, {$addToSet: {interests: "black belt"}})
 db.students.updateOne({name: "Krystal"}, {$addToSet: {interests: "money"}})
 db.students.updateOne({name: "Leo"}, {$addToSet: {interests: "new car"}})
 ```
+11. Add Taxes interest to student
+```
+db.students.updateOne({name: "Krystal"}, {$addToSet: {interests: "taxes"}})
+```
+12. Removes taxes interest that was just added
+```
+db.students.updateOne({name: "Krystal"}, {$pop: {interests: 1}})
+```
